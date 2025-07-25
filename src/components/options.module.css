@@ -1,0 +1,24 @@
+
+
+.optionButton{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.button{
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nonSelectedButton{
+  color: white;
+  background-color: black;
+
+}
+
+.selectdButton{
+  color: #0f172a;
+  background-color: white;
+}

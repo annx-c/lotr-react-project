@@ -13,3 +13,9 @@ h1{
   text-align: center;
   font-family: 'MedievalSharp', cursive;
 }
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
