@@ -1,42 +1,24 @@
-import React, {useState, useEffect} from "react";
+import React, { useState } from "react";
 import Options from "./Options";
-import './dashboard_module.css';
+import "./dashboard_module.css";
+import useFetchData from "../hooks/useFetchData";
 
 export default function Dashboard() {
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState (false);
-  const [data, setData] = useState (null);
+  const [selection, setSelection] = useState(null);
+  const { data, loading, error } = useFetchData(selection);
 
-  const  questions= [
-    'character',
-    'movie',
-    'book'
-  ] ;
+  function onClickHander(clickedButton) {
+    return () => {
+      setSelection(clickedButton);
+    };
+  }
 
-  const apiUrl= 'https://the-one-api.dev/v2';
-  const apiToken= process.env.REACT_APP_API_KEY;
-
-  useEffect(() => {
-    async function fetchData() {
-      const url= apiUrl + '/' + 'book';
-      try {
-        const res = await fetch(url);
-        const jsonData = await res.json();
-        console.log('DATA:' , jsonData);
-        setData(jsonData);
-      } catch (error) {
-        setError(error.message);
-      } finally{
-        setLoading(false);
-      }
-    }
-
-    fetchData();
-  }, []);
-
-  return(
-    <div className= "dashboard">
-      <Options />
+  return (
+    <div className="dashboard">
+      <div>
+        <h1>LOTR INFO</h1>
+        <Options selection={selection} setSelection={onClickHander} />
+      </div>
     </div>
   );
 }

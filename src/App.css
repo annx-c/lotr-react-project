@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  font-family: 'Jost', sans-serif;
 }
 
 .bg-image{
@@ -25,6 +26,7 @@ main{
   flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
   overflow: hidden;
 }
 
