@@ -29,7 +29,7 @@ Una web interactiva que muestra información del mundo de *El Señor de los Anil
 
 ## 🌐 Proyecto en línea
 
-([👉 Ver la calculadora en acción](https://lotr-info-react.netlify.app/))
+([👉 Ver la pagina](https://lotr-info-react.netlify.app/))
 
 
 
