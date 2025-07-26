@@ -6,13 +6,13 @@ export default function useFetchData(selection) {
   const [data, setData] = useState(null);
 
   const apiUrl = "https://the-one-api.dev/v2";
-  const apiToken = process.env.REACT_APP_API_KEY;
+
   useEffect(() => {
     if (!selection) return;
 
     setLoading(true);
 
- 
+    const apiToken = process.env.REACT_APP_API_KEY;
 
     const options = {
       headers: {
