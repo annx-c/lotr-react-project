@@ -2,7 +2,6 @@
 
 Una web interactiva que muestra información del mundo de *El Señor de los Anillos* (LOTR), incluyendo libros, películas y personajes. Utiliza la API pública [The One API](https://the-one-api.dev/) y fue desarrollada con **React**.
 
----
 
 ## 🚀 Funcionalidades
 
@@ -15,7 +14,7 @@ Una web interactiva que muestra información del mundo de *El Señor de los Anil
 - 📱 Diseño responsive (adaptable a móviles y pantallas grandes).
 - 🔐 Token API oculto mediante variables de entorno.
 
----
+
 
 ## 🛠️ Tecnologías usadas
 
@@ -24,7 +23,6 @@ Una web interactiva que muestra información del mundo de *El Señor de los Anil
 - CSS Modules
 - Netlify (para hosting)
 
----
 
 ## 🖼️ Vista previa
   ![Vista previa](./assets/lotr-info-react.png)
