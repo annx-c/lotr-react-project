@@ -6,7 +6,7 @@ export default function Options(props) {
 
   console.log("selection value: ", selection);
   return (
-    <div>
+    <div className={styles.buttonContainer}>
       <div className={styles.optionButton}>
         {questions.map((question, index) => {
           return (
